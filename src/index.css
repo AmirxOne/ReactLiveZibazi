@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #FEE8B9;
+    background-image: url('https://uploads.zibazi.tv/site/assets/images/icons/patern/paternDashboard.webp');
+    background-size: contain;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Hide scrollbar */
+.hideScroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hideScroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  @media only screen and (min-height: 100vw) {
+    #rotate {
+      /* background-image: url('https://uploads.zibazi.tv/site/assets/images//icons/dashboard/پترن.webp'); */
+      /* background-color: #fde296; */
+      display: flex;
+      color: #000000a4;
+    }
+  }
